@@ -1,4 +1,4 @@
-package com.example.demo.securities.services;
+package com.example.demo.services;
 
 import java.util.Collection;
 import java.util.List;

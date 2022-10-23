@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.demo.jwt.JwtUtils;
 import com.example.demo.models.ERole;
 import com.example.demo.models.Role;
 import com.example.demo.models.User;
@@ -29,8 +30,7 @@ import com.example.demo.payloads.response.JwtResponse;
 import com.example.demo.payloads.response.MessageResponse;
 import com.example.demo.repositories.RoleRepo;
 import com.example.demo.repositories.UserRepo;
-import com.example.demo.securities.jwt.JwtUtils;
-import com.example.demo.securities.services.UserDetailsImpl;
+import com.example.demo.services.UserDetailsImpl;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
