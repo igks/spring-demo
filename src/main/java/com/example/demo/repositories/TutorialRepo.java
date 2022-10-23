@@ -2,13 +2,18 @@ package com.example.demo.repositories;
 
 import java.util.List;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.example.demo.models.Tutorial;
 
 public interface TutorialRepo extends JpaRepository<Tutorial, Long> {
 
-  List<Tutorial> findByPublished(boolean published);
+  Page<Tutorial> findByPublished(boolean published, Pageable pageable);
 
-  List<Tutorial> findByTitleContaining(String title);
+  Page<Tutorial> findByTitleContaining(String title, Pageable pageable);
+
+  List<Tutorial> findByTitleContaining(String title, Sort sort);
 }
