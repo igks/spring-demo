@@ -16,4 +16,6 @@ public interface TutorialRepo extends JpaRepository<Tutorial, Long> {
   Page<Tutorial> findByTitleContaining(String title, Pageable pageable);
 
   List<Tutorial> findByTitleContaining(String title, Sort sort);
+
+  List<Tutorial> findTutorialsByTagsId(Long tagId);
 }
