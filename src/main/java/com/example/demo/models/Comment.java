@@ -7,6 +7,13 @@ import org.hibernate.annotations.OnDeleteAction;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "comments")
 public class Comment {
@@ -23,25 +30,4 @@ public class Comment {
   @OnDelete(action = OnDeleteAction.CASCADE)
   @JsonIgnore
   private Tutorial tutorial;
-
-  public Long getId() {
-    return id;
-  }
-
-  public String getContent() {
-    return content;
-  }
-
-  public void setContent(String content) {
-    this.content = content;
-  }
-
-  public Tutorial getTutorial() {
-    return tutorial;
-  }
-
-  public void setTutorial(Tutorial tutorial) {
-    this.tutorial = tutorial;
-  }
-
 }
