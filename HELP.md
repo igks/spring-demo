@@ -8,5 +8,9 @@ For further reference, please consider the following sections:
 - [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.7.5/maven-plugin/reference/html/)
 - [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.7.5/maven-plugin/reference/html/#build-image)
 
+### Start Project
+
+`./mvnw clean spring-boot:run`
+
 ##Swager UI url
-http://localhost:8080/swagger-ui/index.html#/
+http://localhost:9000/swagger-ui/index.html#/
