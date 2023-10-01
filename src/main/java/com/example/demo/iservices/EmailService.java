@@ -1,4 +1,4 @@
-package com.example.demo.services;
+package com.example.demo.iservices;
 
 import com.example.demo.models.Email;
 

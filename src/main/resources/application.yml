@@ -1,0 +1,14 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: 150414610327-icsvurcffnq0153o2ciot9pb4kfheuv5.apps.googleusercontent.com
+            clientSecret: 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
+        provider:
+          google:
+            authorizationUri: https://accounts.google.com/o/oauth2/auth
+            tokenUri: https://oauth2.googleapis.com/token
+            userInfoUri: https://openidconnect.googleapis.com/v1/userinfo
+            userNameAttribute: sub

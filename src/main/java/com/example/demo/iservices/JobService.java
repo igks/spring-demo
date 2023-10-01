@@ -1,4 +1,4 @@
-package com.example.demo.services;
+package com.example.demo.iservices;
 
 import org.jobrunr.jobs.annotations.Job;
 import org.slf4j.Logger;

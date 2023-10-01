@@ -13,6 +13,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.FileSystemUtils;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.example.demo.iservices.FilesStorageService;
+
 @Service
 public class FilesStorageServiceImpl implements FilesStorageService {
 

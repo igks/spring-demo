@@ -1,5 +1,7 @@
 package com.example.demo.services;
 
+import com.example.demo.iservices.EmailService;
+import com.example.demo.iservices.FilesStorageService;
 // Importing required classes
 import com.example.demo.models.Email;
 

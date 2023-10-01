@@ -19,9 +19,9 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.method.annotation.MvcUriComponentsBuilder;
 
+import com.example.demo.iservices.FilesStorageService;
 import com.example.demo.models.FileInfo;
 import com.example.demo.payloads.response.MessageResponse;
-import com.example.demo.services.FilesStorageService;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
