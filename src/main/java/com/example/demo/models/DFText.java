@@ -9,6 +9,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class DFMessage {
-  public DFText text;
+public class DFText {
+  public String[] text;
 }

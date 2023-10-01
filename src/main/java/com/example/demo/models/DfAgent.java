@@ -9,6 +9,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class DFMessage {
-  public DFText text;
+public class DfAgent {
+  public String displayName;
+  public String defaultLanguageCode;
+  public String timeZone;
 }
